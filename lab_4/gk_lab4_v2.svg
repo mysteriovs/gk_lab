@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700" >
+    <defs>
+        <g id="RegularPolygon" >
+            <path d="
+				 M 0 255 L 40 130 130 40 255 0 380 40 470
+				 130 500 255 470 380 380 470 255 500 130 470 40 380 0 255 
+				 M 255 255 L 0 255 
+				 M 255 255 L 40 130 
+				 M 255 255 L 130 40 
+				 M 255 255 L 255 0
+				 M 255 255 L 380 40
+				 M 255 255 L 470 130
+				 M 255 255 L 500 255
+				 M 255 255 L 470 380
+				 M 255 255 L 380 470
+				 M 255 255 L 255 500
+				 M 255 255 L 130 470
+				 M 255 255 L 40 380 
+			 Z" stroke="black" fill="none" >
+             <animateTransform attributeName="transform" type="rotate" from="0 255 255" to="360 255 255" dur="10s" repeatCount="indefinite"/> 
+             </path>
+        </g>
+        <g id="PurpleTower">
+            <use href="#RegularPolygon" x="-280" y="-400" transform="scale(0.6)"/>
+            <use href="#RegularPolygon" x="640" y="-150" transform="scale(0.6)"/>
+            <rect width="600" height="50" fill="red" transform="rotate(15) translate(-50 -100)" />
+            <polygon points="250,0 150,500 350,500" fill="purple"/>
+        </g>
+        <g id="BlueTower">
+            <use href="#RegularPolygon" x="-280" y="-400" transform="scale(0.6)"/>
+            <use href="#RegularPolygon" x="640" y="-150" transform="scale(0.6)"/>
+            <rect width="600" height="50" fill="red" transform="rotate(15) translate(-50 -100)" />
+            <polygon points="250,0 150,500 350,500" fill="blue"/>
+        </g>
+        <g id="GreenTower">
+            <use href="#RegularPolygon" x="-280" y="-400" transform="scale(0.6)"/>
+            <use href="#RegularPolygon" x="640" y="-150" transform="scale(0.6)"/>
+            <rect width="600" height="50" fill="red" transform="rotate(15) translate(-50 -100)" />
+            <polygon points="250,0 150,500 350,500" fill="green"/>
+        </g>   
+    </defs>
+    <text x="200" y="20" font-size="12" >
+        Holisz Przemysław
+    </text>
+       <use href="#GreenTower" x="1900" y="600" transform="scale(0.20)"/>
+       <use href="#PurpleTower" x="200" y="300" transform="scale(0.28)"/>
+       <use href="#BlueTower" x="800" y="900" transform="scale(0.32)"/>
+</svg>
